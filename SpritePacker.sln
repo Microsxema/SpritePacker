@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpritePacker", "SpritePacker\SpritePacker.csproj", "{2625EF36-AE04-41C3-9736-A20D3D8922C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{D7EA5D0F-B32E-4899-9DCE-3C5920C1A576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2625EF36-AE04-41C3-9736-A20D3D8922C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2625EF36-AE04-41C3-9736-A20D3D8922C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2625EF36-AE04-41C3-9736-A20D3D8922C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EA5D0F-B32E-4899-9DCE-3C5920C1A576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EA5D0F-B32E-4899-9DCE-3C5920C1A576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EA5D0F-B32E-4899-9DCE-3C5920C1A576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EA5D0F-B32E-4899-9DCE-3C5920C1A576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
