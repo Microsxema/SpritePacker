@@ -25,24 +25,16 @@ namespace SpritePacker
         public SpriteAtlas(List<SpriteModel> sprites, int padding = 0)
         {
             SpriteAtlasElements = new List<SpriteAtlasElement>();
-            
-            m_padding = padding;
 
-            Packaging(sprites);
+            Initialization(sprites, padding);
+            
+            Packaging();
         }
         
-        private void Packaging(List<SpriteModel> spriteKit)
+        private void Packaging()
         {
             Region region = new Region();
 
-            m_processedSprites = new List<SpriteModel>();
-
-            m_spritesKit = spriteKit.OrderByDescending(value => value.SpriteWidth).ToList();
-
-            AtlasWidth = 0;
-
-            SetAtlasHeight();
-            
             while (m_spritesKit.Count > 0)
             {
                 region = new Region
@@ -119,6 +111,19 @@ namespace SpritePacker
             double value = Math.Sqrt(amountRectangle);
 
             AtlasHeight = (int)Math.Ceiling(value);
+        }
+
+        private void Initialization(List<SpriteModel> sprites, int padding)
+        {
+            m_padding = padding;
+            
+            m_processedSprites = new List<SpriteModel>();
+
+            m_spritesKit = sprites.OrderByDescending(value => value.SpriteWidth).ToList();
+
+            SetAtlasHeight();
+            
+            AtlasWidth = 0;
         }
     }
 
